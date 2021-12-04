@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html style="font-size:100px;" lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title>微通电力系统研究室</title>
+    <link href="https://static.bg2kuj.com/code/css/init_v2_2_min.css" rel="stylesheet">
+    <link href="header.css" rel="stylesheet">
+    <link href="common.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main-width header-content">
+        <div class="header-title">
+            <img src="../img/logo.png" alt="logo" width="300" height="100">
+        </div>
+        <ul class="header-list linkstyle-full2">
+            <li>
+                <span>首页</span>
+                <a href="../index.html" target="_top"></a>
+            </li>
+            <li>
+                <span>导师介绍</span>
+                <a href="../tutor_introduction.html" target="_top"></a>
+            </li>
+            <li>
+                <span>研究方向</span>
+                <a href="javascript:alert('敬请期待')"></a>
+            </li>
+            <li>
+                <span>发表文章</span>
+                <a href="javascript:alert('敬请期待')"></a>
+            </li>
+            <li>
+                <span>课题组成员</span>
+                <a href="javascript:alert('别期待了')"></a>
+            </li>
+            <li>
+                <span>实验室照片</span>
+                <a href="javascript:alert('哎呀，不要点开我，还没弄完呢~')"></a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        const aLi = document.getElementsByTagName('li');
+        if(location.hash === '#0') aLi[0].classList.add('active');
+        if(location.hash === '#1') aLi[1].classList.add('active');
+        if(location.hash === '#2') aLi[2].classList.add('active');
+        if(location.hash === '#3') aLi[3].classList.add('active');
+        if(location.hash === '#4') aLi[4].classList.add('active');
+        if(location.hash === '#5') aLi[5].classList.add('active');
+
+    </script>
+</body>
+</html>

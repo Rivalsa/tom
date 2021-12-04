@@ -2,102 +2,22 @@
 i {
     font-family: iconfont;
 }
-.mid-pic {
-    position: relative;
-    height: 5.9rem;
-    background: url(./img/background_image.jpg) no-repeat 0 -2.82rem / cover;
+.footer1 {
+    height: .8rem;
+    width: 100%;
+    background-color: #2269B9;
 }
-.mid-pic > .pic-content {
-    overflow: hidden;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 11rem;
-    height: 4.3rem;
-    transform: translate(-50%, -50%);
-}
-.mid-pic > .pic-content > ul {
-    display: flex;
-    position: absolute;
-    left: 50%;
-    bottom: .1rem;
-    transform: translateX(-50%);
-}
-.mid-pic > .pic-content > ul > li {
-    margin-left: .1rem;
-    border-radius: .06rem;
-    width: .12rem;
-    height: .12rem;
-    background-color: coral;
-    transition: .3s all linear;
-    cursor: pointer;
-}
-.mid-pic > .pic-content > ul > li.show {
-    width: .5rem;
-    cursor: auto;
-}
-.mid-pic img {
-    display: block;
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 11rem;
-    height: 4.3rem;
-    transition: .3s linear all;
-}
-.mid-pic img.show {
-    visibility: visible;
-    opacity: 1;
-}
-.group-introduction > .main-width {
-    margin: .2rem auto;
-    border: solid 1px #000;
-    border-radius: 10px;
-}
-.group-introduction h1 {
-    margin-bottom: .2rem;
-    text-align: center;
-    font-size: .3rem;
-    color: blue;
-}
-.group-introduction p {
-    line-height: .3rem;
-    font-weight: 600;
-}
-.news {
-    margin: .3rem auto;
-}
-.news .news-title {
-    display: block;
-    margin: auto;
-}
-.news-content {
+.footer1 ul {
     display: flex;
     justify-content: space-between;
-    margin: .2rem auto;
+    line-height: .8rem;
+    color: #fff;
 }
-.news-conten img {
-    width: 2.7rem;
-    height: 2.27rem;
-}
-.news-content > article {
-    overflow: hidden;
-    width: 2.7rem;
-    height: 3.61rem;
-}
-.news-content h2 {
-    margin: .1rem auto;
-    color: #e42b2b;
-}
-.news-content .date-and-user {
-    margin: .1rem auto;
-    font-size: .14rem;
-    color: #777;
-}
-.news-content .text {
-    font-size: .14rem;
+.footer2 {
+    height: .8rem;
+    width: 100%;
+    line-height: .8rem;
+    font-size: .16rem;
 }
 @font-face {
     font-family: 'iconfont';
