@@ -16,15 +16,14 @@ header {
 }
 .header-title {
     margin: auto;
-    height: .53rem;
+    height: 100%;
 
 }
-.header-title > h1 {
-    width: 2.25rem;
-    font-size: .25rem;
-}
-.header-title > p {
-    font-size: .12rem;
+.header-title > img {
+    display: block;
+    margin: .22rem;
+    height: .46rem;
+    width: auto;
 }
 .header-list {
     display: flex;
@@ -58,7 +57,7 @@ header {
 .mid-pic {
     position: relative;
     height: 5.9rem;
-    background-color: pink;
+    background: url(./img/background_image.jpg) no-repeat 0 -2.82rem / cover;
 }
 .mid-pic > .pic-content {
     overflow: hidden;
@@ -67,7 +66,6 @@ header {
     left: 50%;
     width: 11rem;
     height: 4.3rem;
-    background-color: skyblue;
     transform: translate(-50%, -50%);
 }
 .mid-pic > .pic-content > ul {
@@ -105,6 +103,21 @@ header {
     visibility: visible;
     opacity: 1;
 }
+.group-introduction > .main-width {
+    margin: .2rem auto;
+    border: solid 1px #000;
+    border-radius: 10px;
+}
+.group-introduction h1 {
+    margin-bottom: .2rem;
+    text-align: center;
+    font-size: .3rem;
+    color: blue;
+}
+.group-introduction p {
+    line-height: .3rem;
+    font-weight: 600;
+}
 .news {
     margin: .3rem auto;
 }
@@ -116,7 +129,6 @@ header {
     display: flex;
     justify-content: space-between;
     margin: .2rem auto;
-    background-color: #ccc;
 }
 .news-conten img {
     width: 2.7rem;
@@ -125,7 +137,7 @@ header {
 .news-content > article {
     overflow: hidden;
     width: 2.7rem;
-    height: 3.4rem;
+    height: 3.62rem;
 }
 .news-content h2 {
     margin: .1rem auto;
