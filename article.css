@@ -4,7 +4,10 @@ h1 {
     text-align: center;
     color: blue;
 }
-p {
+p, ol {
     line-height: .3rem;
     font-weight: 600;
+}
+ol {
+    padding-left: 3em;
 }

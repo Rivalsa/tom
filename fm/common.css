@@ -8,17 +8,24 @@ header {
     height: .9rem;
     box-shadow: 0 0 .01rem 0 #000;
 }
-header > iframe {
+header > .header {
+    margin: auto;
+    width: 12rem;
+    height: 100%;
+}
+header iframe {
     display: block;
     margin: auto;
     height: 100%;
     width: 100%;
 }
 footer {
+    min-width: 12rem;
     margin-top: .4rem;
     height: 1.6rem;
 }
-footer > iframe {
+footer >  iframe {
+    overflow: hidden;
     display: block;
     margin: auto;
     width: 100%;

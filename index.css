@@ -5,7 +5,7 @@ i {
 .mid-pic {
     position: relative;
     height: 5.9rem;
-    background: url(./img/background_image.jpg) no-repeat 0 -2.82rem / cover;
+    background: url(./img/background_image.jpg) no-repeat center / cover;
 }
 .mid-pic > .pic-content {
     overflow: hidden;

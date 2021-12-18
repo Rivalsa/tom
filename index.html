@@ -12,7 +12,9 @@
 </head>
 <body class="bg0" style="font-size:.16rem">
     <header>
-        <iframe src="fm/header.html#0" frameborder="0"></iframe>
+        <div class="header">
+            <iframe src="fm/header.html#0" frameborder="0"></iframe>
+        </div>
     </header>
     <section class="mid-pic">
         <div class="pic-content">
@@ -75,6 +77,7 @@
         'use strict';
         // 轮播图
         {
+
             const aImg = document.querySelectorAll('.pic-content > img'),
                 aLi = document.querySelectorAll('.pic-content li'),
                 intervalFn = () => {
@@ -83,15 +86,16 @@
                     if(i === aImg.length) i = 0;
                     aImg[i].classList.add('show');
                     aLi[i].classList.add('show');
-                };
+                },
+                INTERVALTIME = 2500; // 轮播图时间间隔（毫秒）
             let i = 0,
                 intervalNum;
-            intervalNum = setInterval(intervalFn ,1000);
+            intervalNum = setInterval(intervalFn, INTERVALTIME);
             document.getElementsByClassName('pic-content')[0].addEventListener('mouseenter', () => {
                 clearInterval(intervalNum);
             });
             document.getElementsByClassName('pic-content')[0].addEventListener('mouseleave', () => {
-                intervalNum = setInterval(intervalFn ,1000);
+                intervalNum = setInterval(intervalFn, INTERVALTIME);
             });
             aLi.forEach((v, j) => {
                 v.addEventListener('click', () => {
