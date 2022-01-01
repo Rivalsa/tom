@@ -2,6 +2,25 @@
 i {
     font-family: iconfont;
 }
+.above-header > .mid {
+    position: relative;
+    margin: auto;
+    width: 12rem;
+    height: 2.16rem;
+    background-color: skyblue;
+}
+.above-header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity .3s linear
+}
+.above-header img.show {
+    opacity: 1;
+}
 .mid-pic {
     position: relative;
     height: 5.9rem;

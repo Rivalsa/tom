@@ -11,6 +11,13 @@
     <link href="fm/common.css" rel="stylesheet">
 </head>
 <body class="bg0" style="font-size:.16rem">
+    <div class="above-header">
+        <div class="mid">
+            <img class="show" src="img/h.png" alt="新年贺词" height="180" width="1000">
+            <img src="img/g.jpg" alt="站点公告" height="180" width="1000">
+            <a class="linkstyle-full2" href="new_year.html"></a>
+        </div>
+    </div>
     <header>
         <div class="header">
             <iframe src="fm/header.html#0" frameborder="0"></iframe>
@@ -18,10 +25,10 @@
     </header>
     <section class="mid-pic">
         <div class="pic-content">
-                <img class="show" src="img/1.png" alt="图一" width="1100" height="430">
-                <img src="img/2.png" alt="图二" width="1100" height="430">
-                <img src="img/3.png" alt="图三" width="1100" height="430">
-                <img src="https://s2.loli.net/2021/12/04/g7a9Gzmehqsu5BU.jpg" alt="图四" width="1100" height="430">
+            <img class="show" src="img/1.png" alt="图一" width="1100" height="430">
+            <img src="img/2.png" alt="图二" width="1100" height="430">
+            <img src="img/3.png" alt="图三" width="1100" height="430">
+            <img src="https://s2.loli.net/2021/12/04/g7a9Gzmehqsu5BU.jpg" alt="图四" width="1100" height="430">
             <ul>
                 <li class="show"></li>
                 <li></li>
@@ -106,6 +113,25 @@
                     i = j;
                 });
             });
+        }
+        // above-header
+        {
+            const aImg = document.querySelectorAll('.above-header img'),
+                oA = document.querySelector('.above-header a');
+            let i = 0;
+            console.log(oA);
+            setInterval(() => {
+                aImg[i++].classList.remove('show');
+                if(i === aImg.length) i = 0;
+                aImg[i].classList.add('show');
+                switch(i) {
+                    case 0:
+                        oA.href = 'new_year.html';
+                        break;
+                    case 1:
+                        oA.href = 'announcement.html';
+                }
+            }, 3000);
         }
     </script>
 </body>
